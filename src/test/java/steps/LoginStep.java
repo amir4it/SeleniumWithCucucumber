@@ -27,7 +27,7 @@ public class LoginStep extends BaseUtil{
     @Then("^I should see the userform page$")
     public void iShouldSeeTheUserformPage() throws Throwable {
 
-        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("Initial")).isDisplayed(), true);
+        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("cssmenu")).isDisplayed(), true);
     }
 
     @Given("^I navigate to the login page$")
@@ -68,7 +68,7 @@ public class LoginStep extends BaseUtil{
     @Then("^I should see the userform page wrongly$")
     public void iShouldSeeTheUserformPageWrongly() throws Throwable {
 
-        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("sdfgdsfsd")).isDisplayed(), true);
+        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("cssmenu")).isDisplayed(), true);
     }
 
 
